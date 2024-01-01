@@ -1,0 +1,61 @@
+server:
+  port: 8081
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      myCircuitBreaker:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 6s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+
+# Configuring Resilience4j Circuit Breaker
+#resilience4j:
+#  circuitbreaker:
+#    instances:
+#      myCircuitBreaker:
+#        failure-rate-threshold: 60  # Modified failure rate threshold to 60
+#        wait-duration-in-open-state: 15000  # Modified wait duration in open state to 15000
+#        registerHealthIndicator: true
+#        eventConsumerBufferSize: 15  # Modified event consumer buffer size to 15
+#        failureRateThreshold: 40  # Modified failure rate threshold to 40
+#        minimumNumberOfCalls: 8  # Modified minimum number of calls to 8
+#        automaticTransitionFromOpenToHalfOpenEnabled: false  # Disabled automatic transition
+#        waitDurationInOpenState: 7s  # Modified wait duration in open state to 7 seconds
+#        permittedNumberOfCallsInHalfOpenState: 4  # Modified permitted number of calls in half-open state to 4
+#        slidingWindowSize: 15  # Modified sliding window size to 15
+#        slidingWindowType: TIME_BASED  # Changed sliding window type to TIME_BASED
+
+
+#      serviceA:
+#        # Configuration for user serviceA' circuit breaker
+#        failure-rate-threshold: 50
+#        wait-duration-in-open-state: 10000
+#        registerHealthIndicator: true
+#
+#      serviceB:
+#        # Configuration for serviceB' circuit breaker
+#        failure-rate-threshold: 55
+#        wait-duration-in-open-state: 12000
+#        registerHealthIndicator: true
+
+
+
