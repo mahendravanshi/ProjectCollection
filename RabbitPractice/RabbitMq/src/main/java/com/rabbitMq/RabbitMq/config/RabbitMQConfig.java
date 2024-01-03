@@ -74,8 +74,10 @@ public class RabbitMQConfig {
     //create json convertor so that rabbitmq can support json messages
     @Bean
     public MessageConverter converter(){
+
         return new Jackson2JsonMessageConverter();
     }
+
 
     @Bean
     public AmqpTemplate amqpTemplate(ConnectionFactory connectionFactory){
@@ -84,5 +86,7 @@ public class RabbitMQConfig {
         return rabbitTemplate;
     }
 
-
+    
 }
+
+
