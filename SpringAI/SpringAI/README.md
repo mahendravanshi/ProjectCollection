@@ -3,6 +3,11 @@ Create Maven Project from Spring Initializer
 [Click here to create Spring Project](start.spring.io)
 
 
+![Images]![Image Alt Text](https://raw.githubusercontent.com/mahendravanshi/SpringAI/main/src/main/resources/static/images/springStarted.png)
+
+
+
+
 
 How to obtain API Key from OpenAI
 Go into OpenAI platforms https://platform.openai.com
