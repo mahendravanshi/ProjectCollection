@@ -7,7 +7,6 @@ Create Maven Project from Spring Initializer
 
 
 
-![Screenshot (6)](https://github.com/mahendravanshi/ProjectCollection/assets/101566258/16f8d68d-7392-4eb2-883e-c3353176012d)
 
 
 How to obtain API Key from OpenAI
