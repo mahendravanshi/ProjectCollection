@@ -10,7 +10,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.Optional;
 
 @RestControllerAdvice
-public class ExceptionTranslator extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 
     public static final String OPEN_AI_CLIENT_RAISED_EXCEPTION = "Open AI client raised exception";
@@ -20,6 +20,7 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
         HttpStatus status = Optional
                 .ofNullable(HttpStatus.resolve(ex.statusCode))
                 .orElse(HttpStatus.BAD_REQUEST);
+
         ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(status, ex.getMessage());
         problemDetail.setTitle(OPEN_AI_CLIENT_RAISED_EXCEPTION);
         return problemDetail;

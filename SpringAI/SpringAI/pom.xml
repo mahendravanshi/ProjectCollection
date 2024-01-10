@@ -22,11 +22,15 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+
 		<dependency>
 			<groupId>org.springframework.experimental.ai</groupId>
 			<artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-			<version>0.2.0-SNAPSHOT</version>
+			<version>0.7.1-SNAPSHOT</version>
 		</dependency>
+
+
 
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
@@ -64,21 +68,16 @@
 		</plugins>
 	</build>
 
+
+
+
 	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<releases>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</releases>
 		</repository>
 	</repositories>

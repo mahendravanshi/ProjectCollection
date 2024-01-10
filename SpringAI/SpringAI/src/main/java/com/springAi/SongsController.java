@@ -7,6 +7,7 @@ import org.springframework.ai.client.AiResponse;
 import org.springframework.ai.parser.BeanOutputParser;
 import org.springframework.ai.prompt.Prompt;
 import org.springframework.ai.prompt.PromptTemplate;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,16 +21,22 @@ public class SongsController {
     private final AiClient aiClient;
 
 
+
+
     public SongsController(AiClient aiClient){
         this.aiClient = aiClient;
     }
 
+
     @GetMapping("/topSongs")
-    public String topSong(){
+    public String topSong() {
 
-         String prompt = "What is the top song in india in 1980";
+            log.info("Inside controller before calling api");
+            String prompt = "What is the top song in India in 1980";
+            log.info("prompt is prompt :{}",prompt);
+            log.info("generated answer {}",aiClient.generate(prompt));
+            return aiClient.generate(prompt);
 
-         return aiClient.generate(prompt);
     }
 
 
@@ -68,3 +75,5 @@ public class SongsController {
 //        return beanOutputParser.parse(text);
 //    }
 }
+
+
