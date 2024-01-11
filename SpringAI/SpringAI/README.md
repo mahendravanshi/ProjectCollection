@@ -1,6 +1,6 @@
 Create Maven Project from Spring Initializer
 
-[Click here to create Spring Project and add them following dependencies shown in image below](start.spring.io)
+[Click here to create a Spring Project and add the following dependencies shown in the image below](start.spring.io)
 <br/>
 <br/>
 <img width="832" alt="springStarter" src="https://github.com/mahendravanshi/ProjectCollection/assets/101566258/2f906d2f-6d61-4cff-b892-bed16c173a11">
@@ -30,7 +30,9 @@ Add a new key or use an existing key
 <img width="932" alt="createAndCopyKey" src="https://github.com/mahendravanshi/ProjectCollection/assets/101566258/ec89c10b-66b8-4449-a37f-48f63de6a13c">
 
 <br/>
-Add this key here 
+<strike>Add the key in application.properties</strike> 
+
+<h1>Add this key in your environment variable and give the reference with the name(which you have provided in an environment variable) in the application.properties as ashown below in image</h1> 
 <br/>
 
 <img width="521" alt="applicationApiKey" src="https://github.com/mahendravanshi/ProjectCollection/assets/101566258/9691685b-3fd2-48f2-a964-7fed628f7989">
