@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Text</title>
+</head>
+<body>
+
+    <h1 th:text="${heading}"></h1>
+   <h2>My name is <span th:text="${name}"></span></h2>
+   <h3>I am learning <span th:text="${this}"></span></h3>
+    <h3>I am learning <span th:text="${ #strings.toUpperCase(this)}"></span></h3>
+
+
+
+
+</body>
+</html>

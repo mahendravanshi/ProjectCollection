@@ -7,11 +7,9 @@
 <form th:action="@{/processInput}" th:object="${userInputForm}" method="post">
     <label for="username">Username:</label>
     <input type="text" id="username" th:field="*{username}" />
-
-
     <label for="password">Password:</label>
     <input type="password" id="password" th:field="*{password}" />
-   
+
     <label>
         <input type="checkbox" id="flag" th:field="*{flag}" />
         Flag

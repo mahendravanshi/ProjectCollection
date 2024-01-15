@@ -13,6 +13,7 @@ public class UserController {
     public String showInputForm(Model model) {
         model.addAttribute("userInputForm", new UserInputForm());
         return "inputForm";
+
     }
 
 

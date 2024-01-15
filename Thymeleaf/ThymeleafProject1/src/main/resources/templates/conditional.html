@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Text</title>
+</head>
+<body>
+
+<h1>Conditional Operator</h1>
+<h2>User is <span th:text="${isActive} ?'ACTIVE' :'NOT ACTIVE'" th:style="${isActive} ? 'color:green':'color:red'"></span></h2>
+
+  <h1 th:if="${gender} =='M'">Male</h1>
+   <h1 th:unless="${gender}=='M'">Female</h1>
+  <div th:switch="${#lists.size(list)}">
+      <h1 th:case="'0'">List Contains Zero Elements</h1>
+      <h1 th:case="'1'">List contains 1 Element</h1>
+      <h1 th:case="*"> List contain more than one elements</h1>
+  </div>
+</body>
+</html>

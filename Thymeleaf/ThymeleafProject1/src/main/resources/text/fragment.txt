@@ -1,0 +1,6 @@
+=> include,insert,replace
+
+
+=> th:replace tag will replace host tag with fragment tag
+=> th:insert tag will insert the body of fragment including the fragment tag inside host tag
+=> th:include tag will include content inside fragment excluding fragment tag

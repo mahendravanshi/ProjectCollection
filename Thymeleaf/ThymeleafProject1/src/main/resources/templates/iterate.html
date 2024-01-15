@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+      <head>
+          <title>Iterate page</title>
+      </head>
+      <body>
+
+      <h1>Going to traverse elements in collection</h1>
+      <h2 th:text="${names}"></h2>
+      <ul>
+          <li th:each="n,status:${names}" th:style="${status.odd}? 'color:red' :'color:blue'" th:text="${status.index+1}+' '+${n}">
+          </li>
+
+      </ul>
+
+      </body>
+</html>
