@@ -4,6 +4,7 @@ import com.project.entity.User;
 import com.project.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,11 +19,10 @@ public class HomeController {
 
 
     @GetMapping("/home")
-    public String test(){
+    public String home(Model model){
+        model.addAttribute("title","This is Home of Contact Manager App");
         return "home";
     }
-
-
 
 
 
