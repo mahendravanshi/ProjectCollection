@@ -1,0 +1,23 @@
+CREATE TABLE `User` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `image` BLOB NOT NULL,
+    `description` TEXT NOT NULL,
+    `role` VARCHAR(255) NOT NULL,
+    `isActive` TINYINT(1) NOT NULL
+);
+
+CREATE TABLE `Contact` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `user_id` INT UNSIGNED NOT NULL,
+    `name` VARCHAR(255) NOT NULL,
+    `nickname` VARCHAR(255) NOT NULL,
+    `work` BIGINT NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `image` BLOB NOT NULL,
+    `description` TEXT NOT NULL,
+    `phoneNumber` VARCHAR(255) NOT NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `User`(`id`)
+);

@@ -1,6 +1,7 @@
-package com.inspiron;
+package com.inspiron.controller;
 
 
+import com.inspiron.LoginData;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
