@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
+
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
       th:replace="~{base::layout(~{::section})}">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 
 <section class="banner">
-   <div class="container">
-     <h1>Signup Here</h1>
-      <form id="register_form" th:object="${user}" th:action="@{/do_register}" method="post">
-
-         <!-- Name field-->
-          <label>Name</label>
-        <input th:value="${user.name}" type="text" name="name" id="name" placeholder="Enter your name here" required>
-          <!-- Email field-->
-          <label>Email</label>
-          <input th:value="${user.email}" type="email" name="email" id="email" placeholder="Enter your email here" required>
-
-          <!--          Password field-->
-          <label>Password</label>
-          <input type="password" name="password" id="password" placeholder="Enter your password here" required>
-
-          <textarea th:value="${user.about}" name="about" id="textarea" placeholder="Description about you"></textarea>
-          
-<!--          this is t&c agreement checkbox-->
-          <label>Accept terms and agreement</label>
-          <input type="checkbox" name="agreement" id="agreement">
-
-<!--  buttons-->
-          <input type="submit" value="Submit Form">
-          <input type="reset" value="Reset">
-
-      </form>
-   </div>
+    <div class="container">
+        <h1>Signup Here</h1>
+        <form id="register_form" th:object="${user}" th:action="@{/do_register}" method="post">
+            <div th:if="${session.message}" th:classAppend="${session.message.type}">
+                <p th:text="${session.message.content}"></p>
+            </div>
+            <label>Name</label>
+            <input th:value="${user.name}" type="text" name="name" id="name" placeholder="Enter your name here" required>
+            <label>Email</label>
+            <input th:value="${user.email}" type="email" name="email" id="email" placeholder="Enter your email here" required>
+            <label>Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password here" required>
+            <textarea th:value="${user.about}" name="about" id="textarea" placeholder="Description about you"></textarea>
+            <label>Accept terms and agreement</label>
+            <input type="checkbox" name="agreement" id="agreement">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
 </section>
-
-
 </body>
 </html>

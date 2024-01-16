@@ -1,7 +1,9 @@
 package com.project.controller;
 
 import com.project.entity.User;
+import com.project.helper.Message;
 import com.project.repository.UserRepository;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -46,23 +48,33 @@ public class HomeController {
 //    this handler is for regsitering user
 
     @PostMapping("/do_register")
-    public String registetUser(@ModelAttribute("user")User user,@RequestParam(value = "agreement",defaultValue = "false") Boolean agreement,Model model){
+    public String registetUser(@ModelAttribute("user")User user, @RequestParam(value = "agreement",defaultValue = "false") Boolean agreement, Model model, HttpSession session){
 
 
-        if(!agreement){
-            System.out.println("You have not agreed to t&c");
+        try{
+            if(!agreement){
+                System.out.println("You have not agreed to t&c");
+                throw new Exception("You have not agreed to t&c");
+            }
+
+            user.setRole("ROLE_USER");
+            user.setEnabled(true);
+            user.setImageUrl("img.png");
+
+
+            log.info("Agreement ",agreement);
+            log.info("User:{}",user);
+
+            User res =  userRepository.save(user);
+
+            model.addAttribute("user",new User());
+            session.setAttribute("message",new Message("Successfully registered","Alert success"));
         }
-
-        user.setRole("ROLE_USER");
-        user.setEnabled(true);
-
-
-        log.info("Agreement ",agreement);
-        log.info("User:{}",user);
-
-       User res =  userRepository.save(user);
-
-        model.addAttribute("USER",res);
+        catch (Exception e){
+            e.printStackTrace();
+            model.addAttribute("user",user);
+            session.setAttribute("message",new Message("Something went wrong!!"+e.getMessage(),"Alert -error"));
+        }
         return "signup";
 
      }
