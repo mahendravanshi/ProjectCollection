@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Table(name="my_user")
+@ToString(exclude={"contacts"})
 public class User {
 
     @Id
@@ -24,7 +25,7 @@ public class User {
 
     private String password;
     private String role;
-    private boolean isActive;
+    private Boolean enabled;
     private String imageUrl;
 
     @Column(length=500)
