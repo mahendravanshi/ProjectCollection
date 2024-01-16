@@ -18,10 +18,22 @@ public class HomeController {
     private UserRepository userRepository;
 
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String home(Model model){
         model.addAttribute("title","This is Home of Contact Manager App");
         return "home";
+    }
+
+    @GetMapping("/about")
+    public String about(Model model){
+        model.addAttribute("title","This is About Page of Contact Manager App");
+        return "about";
+    }
+    
+    @GetMapping("/signup")
+    public String signup(Model model){
+        model.addAttribute("title","Register - Smart Contact Manager");
+        return "about";
     }
 
 
