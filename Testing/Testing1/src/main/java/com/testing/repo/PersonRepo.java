@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface PersonRepo extends JpaRepository<Person, Integer> {
 
-     @Query("SELECT CASE WHEN COUNT(p) > 0 THEN TRUE ELSE FALSE END FROM Person p WHERE p.personId = ?1")
-     Boolean isPersonExistById(Integer id);
+     @Query("SELECT CASE WHEN COUNT(p) > 0 THEN true ELSE false END FROM Person p WHERE p.personId = ?1")
+     Boolean existsByPersonId(Integer personId);
+
+
 }

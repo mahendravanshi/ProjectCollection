@@ -18,7 +18,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer personId;
     private String personName;
     private String personCity;
 

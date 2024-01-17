@@ -1,4 +1,4 @@
-package com.testing.entity.controller;
+package com.testing.controller;
 
 
 import com.testing.entity.Person;
