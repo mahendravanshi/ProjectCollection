@@ -18,4 +18,13 @@ public class Calculator {
         return a==b;
     }
 
+    public int addAnyNumbers(int ...nums){
+         int x = 0;
+
+        for(int n:nums){
+           x+=n;
+        }
+        return x;
+    }
+
 }
