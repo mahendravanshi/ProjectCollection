@@ -92,7 +92,7 @@ class UserServiceTest {
         User user1 = new User(1, "Doug", 21,"123 Church Street");
         Assertions.assertThrows(UserNotFoundException.class, ()-> userService.findById(user1.getId()));
     }
-    
+
 
 
 
