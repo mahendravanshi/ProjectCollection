@@ -1,0 +1,31 @@
+SDLC
+
+Waterfall Method => 
+
+It is a SDLC method which  is also knownn as linear sequential method.
+
+
+Ther are mainly several process in a SDLC such as
+1. Requirement Analysis => The requirement analysis is done and its feasibility is checked.
+2. System Design => Then  the system design part is done 
+3. Develpement => Inthis SDLC the software is developed and it is moved to the testing part.
+4. Testing => The software is then moved to the testing part where the unit testing and integraton testing is done simultaneously.
+5. Deployment/Production => The software is then released into the production phase and nit is deployed to the end user for use.
+6. Maintenance => After taking the feedback from the end user the patches are released also to enhance the versions the better versions are released.
+
+
+Agile
+
+Unlike Waterfall Model very little planning is required to get started with the project.
+Agile assumes that the users needs are ever-changing in a dynamic business and IT world
+
+Agile methodology is a practice that promotes continuous iteration of development and testing over sdlc.
+Instead of big launch we develop small and do cointinuos iterations over the sdlc by taking feedback from the customer
+
+
+
+How @Autowired works
+
+@Autowired is a Spring annotation used for automatic dependency injection. When you mark a field, method, or constructor with @Autowired, Spring automatically injects the appropriate bean into that component at runtime.
+
+
