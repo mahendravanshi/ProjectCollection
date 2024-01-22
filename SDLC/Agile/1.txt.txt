@@ -1,31 +1,41 @@
-SDLC
+About Agile Methodology
+Agile methodology is a practice that promotes continuous iteration of development and testing throughout the software development lifecycle of the project. It is one of the simplest yet effective software development method. Instead of making a big launch, we delivers work in small, but flexible. Requirements, plans, results, everything are always evaluated for responding a change.
 
-Waterfall Method => 
+This Agile process contrasts with the traditional waterfall approach to software development, where developers typically compile the needs and requirements of the users and then build the software all at once.
 
-It is a SDLC method which  is also knownn as linear sequential method.
+Agile Manifesto
+The agile software development emphasizes on four core values:
 
+Individual and team interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+There are also 12 principles of the agile software development:
 
-Ther are mainly several process in a SDLC such as
-1. Requirement Analysis => The requirement analysis is done and its feasibility is checked.
-2. System Design => Then  the system design part is done 
-3. Develpement => Inthis SDLC the software is developed and it is moved to the testing part.
-4. Testing => The software is then moved to the testing part where the unit testing and integraton testing is done simultaneously.
-5. Deployment/Production => The software is then released into the production phase and nit is deployed to the end user for use.
-6. Maintenance => After taking the feedback from the end user the patches are released also to enhance the versions the better versions are released.
-
-
-Agile
-
-Unlike Waterfall Model very little planning is required to get started with the project.
-Agile assumes that the users needs are ever-changing in a dynamic business and IT world
-
-Agile methodology is a practice that promotes continuous iteration of development and testing over sdlc.
-Instead of big launch we develop small and do cointinuos iterations over the sdlc by taking feedback from the customer
-
-
-
-How @Autowired works
-
-@Autowired is a Spring annotation used for automatic dependency injection. When you mark a field, method, or constructor with @Autowired, Spring automatically injects the appropriate bean into that component at runtime.
+1.Satisfying customers through early and continuous delivery of valuable work.
+2.Breaking big work down into smaller tasks that can be completed quickly.
+3.Recognizing that the best work emerges from self-organized teams.
+4.Providing motivated individuals with the environment and support they need and trusting them to get the job done.
+5.Creating processes that promote sustainable efforts.
+6. Maintaining a constant pace for completed work.
+7. Welcoming changing requirements, even late in a project.
+8. Assembling the project team and business owners on a daily basis throughout the project.
+9. Having the team reflect at regular intervals on how to become more effective, then tuning and adjusting behavior accordingly.
+10. Measuring progress by the amount of completed work.
+11. Continually seeking excellence.
+12. Harnessing change for a competitive advantage.
 
 
+
+About Scrum
+Scrum is an agile development method which concentrates specifically on how to manage tasks within a team-based development environment. It consist of three roles:
+
+Product Owner: creates product backlog, prioritizes the backlog and responsible for the delivery of the functionality at each iteration
+Scrum Master: responsible for setting up the team, sprint meeting and removes obstacles to progress
+Scrum Team: manages and organizes the work to complete the sprint or cycle
+There are also scrum events that need to be done on every iteration, which takes around 2–4 weeks to complete:
+
+Sprint Planning: occurs at the beginning of a sprint where the team determines the product backlog items they will work on during that sprint.
+Daily Scrum: a 15-minute time-boxed event for the Development Team to synchronize activities and create a plan
+Sprint Review: holds at the end of the Sprint to inspect the Increment and adapt the Product Backlog if needed.
+Sprint Retrospective: providing an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint.
