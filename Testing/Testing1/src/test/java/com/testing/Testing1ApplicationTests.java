@@ -37,9 +37,6 @@ class Testing1ApplicationTests {
     }
 
 
-
-
-
     //sum
     @Test
     @DisplayName("customName of this Method")

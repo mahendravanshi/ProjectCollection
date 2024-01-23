@@ -1,0 +1,55 @@
+Normalization 
+
+It is the process of removing redundant data and enhance data integrity in the table;
+It also helps to organise the data in the database;
+
+It is a multi step process that sets the data into tabular form and removes the duplicated data from the relational tables
+
+
+
+
+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+1NF => The table is said to be 1NF if the atomicity of the table is 1. It meeans there will be only one data in the particular column.
+https://www.simplilearn.com/ice9/free_resources_article_thumb/normalizationinsql_14.png
+
+
+
+Candidate Key => It is a set of one or more columns which uniquely identifies a column and we can use each key as a primary key.
+
+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+2NF => For 2NF 1.The table should be in 1NF.
+               2. The table should not have a partial dependency;
+https://www.simplilearn.com/ice9/free_resources_article_thumb/normalizationinsql_4.png	
+
+columns id,store_id,store_location
+
+The Location table possesses a composite primary key cust_id, storeid. The non-key attribute is store_location. In this case, store_location only depends on storeid, which is a part of the primary key. Hence, this table does not fulfill the second normal form.
+
+
+To bring this into 2NF then we should split the tables into two such as
+
+table_1
+id,store_id
+
+table 2
+store_id,store_location
+
+
+
+Now the store_location column entirely depends on the primary keyof that table (store_id);
+
+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+3NF =>The First condition of the table to be 3NF should be that it should be in 2NF.
+    => The second condition should be such that there should be no transitive dependency for non-prime attributes should not depend on non-prime attributes in a table.
+
+Therefore a transitive dependency is a functional dependency in which A->C (indirectly) where A->B and B->C(which is not the case of B->A).
+
+
+
+
+
+
