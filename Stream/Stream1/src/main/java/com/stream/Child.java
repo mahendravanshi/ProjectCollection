@@ -9,7 +9,7 @@ public class Child extends Parent{
 
     public static void main(String[] args) {
         Parent c1 =  new Child();
-        System.out.println(((Parent) c1).m1());
+//        System.out.println(c1.m1());
 
 
     }
