@@ -9,8 +9,8 @@ app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.json());
 
 let tasks = [
-  { id: 1, name: "Task 1", priority: 25 },
-  { id: 2, name: "Task 2", priority: 30 },
+  { id: 1, name: "Task 1", priority: 25,isComplete:false },
+  { id: 2, name: "Task 2", priority: 30 ,isComplete:false },
   // Add more tasks as needed
 ];
 
