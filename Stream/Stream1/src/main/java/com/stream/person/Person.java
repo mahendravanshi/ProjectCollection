@@ -1,4 +1,4 @@
-package com.stream;
+package com.stream.person;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

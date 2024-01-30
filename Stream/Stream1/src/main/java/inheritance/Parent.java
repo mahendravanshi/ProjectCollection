@@ -1,4 +1,4 @@
-package com.stream;
+package inheritance;
 
 public class Parent {
 

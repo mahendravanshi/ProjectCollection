@@ -13,7 +13,7 @@ function AllRoutes() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="*" element={<h1>404 not found</h1>}/>
     </Routes>
-
+    
   );
 }
 

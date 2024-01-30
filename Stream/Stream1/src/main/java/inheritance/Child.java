@@ -1,6 +1,6 @@
-package com.stream;
+package inheritance;
 
-public class Child extends Parent{
+public class Child extends Parent {
 
       public String m1(){
 
