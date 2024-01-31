@@ -22,16 +22,16 @@ public class StudentMain {
                         new Student(10, "Shubham", 26, "Male", "Instrumentation Engineering", "Mumbai", 98, Arrays.asList("+912632646482", "+16734323229929")))
                 .toList();
 
-         
+
 //        group by departments
 //        studentList.stream().collect(Collectors.groupingBy(Student::getDept)).forEach((k,v)-> System.out.println(k+"->"+v));
 
 
 //        convert name,department to uppercase and map name and department
 
-         studentList.stream().map(x->x.getFirstName().toUpperCase())
+         studentList.stream().collect(Collectors.toMap(st->st.getFirstName().toUpperCase(),st->st.getDept().toUpperCase())).forEach((k,v)->System.out.println(k+"=>"+v));
 
-
+       
 
 }
 

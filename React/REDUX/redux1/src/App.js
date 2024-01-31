@@ -1,13 +1,16 @@
+import { useSelector } from "react-redux";
 import "./App.css";
-import Nav from "./Components/Nav";
-import AllRoutes from "./Routes/AllRoutes";
+
+import Counter from "./Components/Counter";
 
 
 function App() {
+
   return (
     <div className="App">
-      <Nav />
-      <AllRoutes/>
+      <Counter />
+      {/* <Nav /> */}
+      {/* <AllRoutes/> */}
     </div>
   );
 }

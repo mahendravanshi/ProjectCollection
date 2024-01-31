@@ -1,0 +1,19 @@
+.buttonCount{
+
+      display:flex;
+      justify-content:center;
+      gap:20px;
+}
+
+button{
+
+      padding:10px;
+
+      border-radius:5px;
+      color:#fff;
+      background:black;
+}
+
+button:hover{
+      cursor: pointer;
+}
