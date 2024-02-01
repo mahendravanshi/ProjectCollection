@@ -31,7 +31,7 @@ public class StudentMain {
 
          studentList.stream().collect(Collectors.toMap(st->st.getFirstName().toUpperCase(),st->st.getDept().toUpperCase())).forEach((k,v)->System.out.println(k+"=>"+v));
 
-       
+
 
 }
 

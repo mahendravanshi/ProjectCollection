@@ -7,7 +7,7 @@ const initial = {
 }
 
 
-export const dataReducer = (state=inititalState)=>{
+export const dataReducer = (state=initial,action)=>{
     
       const {type,payload} = action;
 
@@ -17,12 +17,12 @@ export const dataReducer = (state=inititalState)=>{
              
                return {...state,loading:true,error:null};
           }
-          
+
           case FETCH_DATA_FAILURE :{
              
             return {...state,loading:false,error:payload};
           }
-
+         
           case FETCH_DATA_SUCCESS :{
              
             return {...state,loading:false,data:payload};
