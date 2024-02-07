@@ -6,7 +6,7 @@ import { store } from "../store";
 import style from "./Counter.module.css"
 export default function Counter(){
      
-      const dispatch = useDispatch();
+      const dispatch = useDispatch() ;
       const { count } = useSelector((store) => store.countReducer);
        console.log(count);
        return (

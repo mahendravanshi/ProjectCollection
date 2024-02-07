@@ -33,7 +33,7 @@ const Todo = () => {
               <h1>{el.task}</h1>
               <h3>{el.priority}</h3>
             </div>
-
+            
 
         })}
         
