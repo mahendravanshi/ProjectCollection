@@ -2,6 +2,7 @@ package com.webmvc.service;
 
 import com.webmvc.entity.Employee;
 import com.webmvc.repository.EmployeeRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,8 +24,13 @@ public class EmployeeService {
 
     }
 
+
+
     public Employee getById(int id) {
 
+          var list = new ArrayList<String>();
+          list.add("s1");
+          list.add("s2");
         return employeeRepository.findById(id).orElseThrow(()->new RuntimeException("No employee found to by id"+id));
 
     }
@@ -36,12 +43,12 @@ public class EmployeeService {
     }
 
 
-    public Employee deleteEmployee(int id) {
+    public String deleteEmployee(int id) {
 
        Employee emp =   employeeRepository.findById(id).orElseThrow(()->new RuntimeException("No employee found to delete by id"+id));
 
         employeeRepository.deleteById(id);
-        return emp;
+        return "Employee deleted successfully";
     }
 
 

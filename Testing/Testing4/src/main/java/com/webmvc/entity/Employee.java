@@ -19,8 +19,8 @@ public class Employee {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
       private Integer id;
-      private String fName;
-      private String lName;
+      private String firstName;
+      private String lastName;
       private String email;
 
 }
