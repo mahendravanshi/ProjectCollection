@@ -30,7 +30,7 @@ public class Product{
 //     public int hashCode(){
 //          return Objects.hash(id,name,price);
 //     }
-       
+
 
     private Product(){}
 
@@ -78,12 +78,12 @@ public class Product{
     public static void main(String[] args) {
 
         Product product = Product.builder().id(1).price(10).build();
-//        System.out.println(product);
+//       System.out.println(product);
 
         Product p1 = Product.builder().id(1).price(10).build();
 
 
-        System.out.println(p1.equals(product));
+
     }
 
 
