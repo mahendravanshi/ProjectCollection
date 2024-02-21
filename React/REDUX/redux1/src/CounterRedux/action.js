@@ -15,4 +15,3 @@ export const decrementCount = (payload)=>{
 export const resetCount = (payload)=>{
      return{type:RESET_COUNT,payload}
 }
-

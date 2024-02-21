@@ -6,7 +6,6 @@ import { thunk } from "redux-thunk";
 
 
 
-
 const rootReducer = combineReducers({
     countReducer,
     dataReducer
