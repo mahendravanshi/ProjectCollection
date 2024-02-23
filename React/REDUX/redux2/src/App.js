@@ -1,23 +1,20 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { Router } from 'react-router-dom';
 import './App.css';
-import { Login } from './components/Login';
-import { Product } from './components/Product';
-import { Register } from './components/Register';
-import { User } from './components/User';
+import { Home } from './components/Home';
+import { Nav } from './components/Nav';
 
-function App() {
-
-  const user = useSelector(state=>state.loggedInUser);
- const dispatch = useDispatch();
+export default function App() {
 
   return (
     <div className="App">
-       <Product/>
-       <Register/>
-       <User/>
-       {user ? <button onClick={()=>dispatch(logout())}>Logout</button>:<Login/>}
+      <Router>
+        <Nav></Nav>
+        <Home></Home>
+      </Router>
     </div>
   );
 }
 
-export default App;
+
+
+

@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import { LOGIN } from "../store/actionType";
 import { useState } from "react";
 import { login } from "../store/action";
 
@@ -11,7 +10,7 @@ export const Login = ()=>{
     const dispatch = useDispatch();
     const handleLogin = (e)=>{
         e.preventDefault();
-        const payload =   users.find(user=>user.username=username&&user.password==password);
+        const payload =   users.find(user=>user.username===username&&user.password===password);
         if(payload){
             dispatch(login(payload))
             alert("Successfullly dispatched")
@@ -29,5 +28,6 @@ export const Login = ()=>{
             <input type="password" placeholder="Enter password"   value={password} onChange={(e)=>setPassword(e.target.value)}/>
             <input type="submit" value="Login" onClick={handleLogin}/>
          </form>
+
       )
 }

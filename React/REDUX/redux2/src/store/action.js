@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT, REGISTER } from "./actionType"
+import { LOGIN, REGISTER } from "./actionType"
 
 
 export const register = (payload)=>{
@@ -11,7 +11,7 @@ export const login = (payload)=>{
      return {type:LOGIN,payload};
 }
 
-export const logout = ()=>{
+// export const logout = ()=>{
 
-     return {type:LOGOUT};
-}
+//      return {type:LOGOUT};
+// }

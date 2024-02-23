@@ -43,13 +43,13 @@ export const reducer = (state=initState,action)=> {
                 return {
                     ...state,loggedInUser:payload
                 };
-             case LOGOUT :
-                return {
-                    ...state,loggedInUser:null
-                };
+            //  case LOGOUT :
+            //     return {
+            //         ...state,loggedInUser:null
+            //     };
              default :
              return state;
         }     
-
+        
 }
 
