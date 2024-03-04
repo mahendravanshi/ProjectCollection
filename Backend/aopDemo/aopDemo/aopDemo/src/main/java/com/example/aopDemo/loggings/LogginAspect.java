@@ -13,6 +13,8 @@ public class LogginAspect {
         System.out.println("save method called");
     }
 
+
+
     @AfterReturning(pointcut = "execution(* com.example.aopDemo.services.StudentService.updateStudent(..))",returning = "result")
     public void updateAdvice() {
         System.out.println("update method called");

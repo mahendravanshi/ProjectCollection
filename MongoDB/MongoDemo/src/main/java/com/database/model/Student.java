@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="student")
 public class Student {
 
-      @Id
+
       private Integer id;
       private String name;
       private Integer marks;

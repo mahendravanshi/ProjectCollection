@@ -37,7 +37,7 @@ public class OrderService {
 
             if(o.isPresent()) return o.get();
             else{
-                throw new CustomException("Order it found");
+                throw new CustomException("Order not found");
             }
 
        }

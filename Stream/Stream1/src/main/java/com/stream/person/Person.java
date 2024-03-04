@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Data
@@ -46,6 +48,10 @@ public class Person {
 //        System.out.println(totalPrice);
 
 //        filterByPriceIncrease
+
+        BiFunction<Integer,Integer,Integer> add = (a, b)->(a+b);
+        System.out.println(add.apply(1,2));;
+
 
         List<Person> filterByPriceIncreaseThenName= personList.stream()
                 .sorted(Comparator.comparingDouble(Person::getPrice).thenComparing(Person::getName))

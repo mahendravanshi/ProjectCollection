@@ -24,5 +24,5 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
         problemDetail.setTitle(OPEN_AI_CLIENT_RAISED_EXCEPTION);
         return problemDetail;
     }
-
+   
 }

@@ -3,6 +3,7 @@ package com.database.controller;
 import com.database.model.Student;
 import com.database.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,10 @@ public class StudentController {
     public ResponseEntity<List<Student>> getAllStudents(){
         return new ResponseEntity<>(studentRepository.findAll(), HttpStatus.OK);
     }
+
+
+
+
 
 
 

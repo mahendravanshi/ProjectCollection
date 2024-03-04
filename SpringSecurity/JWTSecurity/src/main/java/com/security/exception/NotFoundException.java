@@ -1,4 +1,4 @@
-package com.security.service;
+package com.security.exception;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String format) {
