@@ -2,8 +2,14 @@ package com.thread.Multithreading1.thread;
 
 import java.sql.Time;
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -40,6 +46,53 @@ public class Main {
 
         // Shutdown the pool after tasks are submitted
         pool.shutdown();
+
+
+        Thread1 t1 = new Thread1();
+//        t1.start();
+
+
+
+
+//        List<Character> ch = Arrays.asList(
+//                'G', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'G',
+//                'e', 'e', 'k', 's');
+//
+//        String str = ch.stream().map(String::valueOf).collect(Collectors.joining());
+//        System.out.println(str);
+
+        List<String> str_0 = Arrays.asList("Geeks", "for", "Geeks");
+        String str1 = str_0.stream().collect(Collectors.joining());
+//        System.out.println(str1);
+
+        List<Character> ch = Arrays.asList('G', 'e', 'e', 'k', 's', 'f',
+                'o', 'r', 'G', 'e', 'e', 'k', 's');
+
+        // Convert the character list into String
+        // using Collectors.joining() method
+        // with, as the delimiter
+
+//        String str3 = ch.stream().map(String::valueOf).collect(Collectors.joining(":"));
+//        System.out.println(str3);
+
+
+        // Get the List
+        List<String> g
+                = Arrays.asList("geeks", "for", "geeks");
+
+        // Collect the list as map
+        // by groupingBy() method
+        Map<String, Long> result
+                = g.stream().collect(
+                Collectors.groupingBy(
+                        Function.identity(),
+                        Collectors.counting()));
+
+
+        // Print the result
+        System.out.println(result);
+
+
 
 
     }

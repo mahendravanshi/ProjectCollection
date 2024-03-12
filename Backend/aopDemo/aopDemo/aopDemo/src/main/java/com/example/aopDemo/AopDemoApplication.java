@@ -3,8 +3,10 @@ package com.example.aopDemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AopDemoApplication {
 
 	public static void main(String[] args) {
@@ -12,10 +14,9 @@ public class AopDemoApplication {
 	}
 
 
-	@Bean
-	public PasswordEncoder passwordEncoder(){
-
-
-	}
+//	@Bean
+//	public PasswordEncoder passwordEncoder()
+//
+//	}
 
 }

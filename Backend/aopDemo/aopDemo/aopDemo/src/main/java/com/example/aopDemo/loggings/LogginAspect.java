@@ -14,7 +14,6 @@ public class LogginAspect {
     }
 
 
-
     @AfterReturning(pointcut = "execution(* com.example.aopDemo.services.StudentService.updateStudent(..))",returning = "result")
     public void updateAdvice() {
         System.out.println("update method called");
@@ -25,9 +24,11 @@ public class LogginAspect {
         System.out.println("update method called and got a Exception"+exception.getMessage());
     }
 
+
     @Around("execution(* com.example.aopDemo.services.StudentService.getStudent(..))")
     public void aroundAdvice() {
         System.out.println("For get student details perform around operations");
     }
+
 
 }

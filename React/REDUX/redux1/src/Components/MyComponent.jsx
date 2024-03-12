@@ -6,7 +6,7 @@ import { fetchData } from "../ProductRedux/thunjk";
 const MyComponent = () => {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.dataReducer);
-
+  
   console.log(data);
 
   useEffect(() => {

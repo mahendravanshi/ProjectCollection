@@ -11,7 +11,7 @@ export const reducer = (state=init, action) => {
     case INCREASE_COUNT: {
       return { ...state, count: count==10?count:count+payload};
     }
-
+    
     case DECREASE_COUNT: {
       return { ...state, count: count==0?count:count-payload};
     }
