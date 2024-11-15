@@ -1,14 +1,22 @@
 
+ schema{
+     query:Query
+ }
 
   type Mutation{
-       createBook(book:BookInput):Book
+      createBook(book:BookInput):Book
+      deleteById(id: Int!): Book
   }
+
 
 
   type Query{
     allBooks:[Book]
     getBook(id:Int):Book
+    getBookA(author:String):Book
   }
+
+
 
   type Book {
      id: ID!
@@ -20,10 +28,10 @@
 
   }
 
-        input BookInput {
-            title:String
-            desc:String
-            author:String
-            price:Float
-            pages:Int
-        }
+  input BookInput {
+        title:String
+        desc:String
+        author:String
+        price:Float
+        pages:Int
+  }

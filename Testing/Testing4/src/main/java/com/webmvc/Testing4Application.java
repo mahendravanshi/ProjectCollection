@@ -14,10 +14,10 @@ public class Testing4Application {
 	}
 
 
-	@Bean
-	public ObjectMapper getMapper(){
-		return new ObjectMapper();
-	}
+//	@Bean
+//	public ObjectMapper getMapper(){
+//		return new ObjectMapper();
+//	}
 
 
 }

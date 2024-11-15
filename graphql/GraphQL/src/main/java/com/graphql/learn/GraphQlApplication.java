@@ -47,4 +47,7 @@ public class GraphQlApplication implements CommandLineRunner {
 		this.bookService.addBook(b3);
 
 	}
+
+
+
 }

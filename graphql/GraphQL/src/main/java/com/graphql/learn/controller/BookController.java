@@ -33,14 +33,23 @@ public class BookController {
     @MutationMapping("createBook")
     public Book addBook(@Argument(name="book") BookInput bookInput) {
         Book book = new Book();
-        book.setTitle(bookInput.getTitle());
-        book.setAuthor(bookInput.getAuthor());
-        book.setPrice(bookInput.getPrice());
-        book.setDesc(bookInput.getDesc());
-        book.setPages(bookInput.getPages());
+        book.setTitle(bookInput.title());
+        book.setAuthor(bookInput.author());
+        book.setPrice(bookInput.price());
+        book.setDesc(bookInput.desc());
+        book.setPages(bookInput.pages());
 
         return bookService.addBook(book);
     }
+
+    @MutationMapping("deleteById")
+    public Book deleteById(@Argument Integer id){
+
+//         return bookService.deleteById(id)?"Book deleted successfully":"Book not found with book id "+id;
+
+        return bookService.deleteById(id)?new Book():null;
+    }
+
 
 
 
@@ -50,7 +59,6 @@ public class BookController {
     }
 
 
-
     @QueryMapping("getBook")
     public Optional<Book> getById(@Argument Integer id){
          return bookService.getById(id);
@@ -58,17 +66,23 @@ public class BookController {
 
 
 
+    @QueryMapping("getBookA")
+    public Optional<Book> getByAuthor(@Argument String  author){
+        return bookService.getByAuthor(author);
+    }
+
+
+
+
 
 
 }
 
-@Getter
-@Setter
-class BookInput{
+record BookInput(
+        String title,
+        String desc,
+        String author,
+        double price,
+        int pages
+) {}
 
-        private String title;
-        private String desc;
-        private String author;
-        private double price;
-        private int pages;
-}

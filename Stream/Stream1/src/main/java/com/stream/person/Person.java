@@ -42,15 +42,17 @@ public class Person {
 
         List<Person> priceGreaterThan800 = personList.stream().filter(x->x.getPrice()>800).collect(Collectors.toList());
 //        System.out.println(priceGreaterThan800);
+//        personList.stream().filter(p->p.price>800).forEach(x-> System.out.println(x));
 
         // sumOfAll
         Double totalPrice = personList.stream().mapToDouble(Person::getPrice).reduce(0, Double::sum);
 //        System.out.println(totalPrice);
+      
 
 //        filterByPriceIncrease
 
         BiFunction<Integer,Integer,Integer> add = (a, b)->(a+b);
-        System.out.println(add.apply(1,2));;
+//        System.out.println(add.apply(1,2));;
 
 
         List<Person> filterByPriceIncreaseThenName= personList.stream()
@@ -70,7 +72,7 @@ public class Person {
 //        System.out.println(namesWithPriceGreaterThan1000);
 
         boolean checkPersonWithPriceGreaterThan2000  = personList.stream().filter(x->x.getPrice()>2000.0).count()>0?true:false;
-        System.out.println(checkPersonWithPriceGreaterThan2000);
+//        System.out.println(checkPersonWithPriceGreaterThan2000);
 
 //        Create a Map where the key is the person's name, and the value is their price.
 
@@ -94,10 +96,10 @@ public class Person {
                 .collect(Collectors.groupingBy(Person::getPrice));
 
         // Print the result
-        groupedByPrice.forEach((price, persons) -> {
-            System.out.println("Price: " + price);
-            persons.forEach(person -> System.out.println("  - " + person.getName()));
-        });
+//        groupedByPrice.forEach((price, persons) -> {
+//            System.out.println("Price: " + price);
+//            persons.forEach(person -> System.out.println("  - " + person.getName()));
+//        });
 
 
 //        Partition persons into two groups: those with a price greater than 1000.0 and those with a price less than or equal to 1000.0.

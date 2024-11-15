@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("employees/")
 public class EmployeeController {
 
 
@@ -26,26 +27,26 @@ public class EmployeeController {
 
 
       //find Employee By Id
-    @GetMapping("/employees/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById (@PathVariable("id") int id)
     {
         return new ResponseEntity<>(employeeService.getById(id),HttpStatus.OK);
     }
 
     // get All Employees
-    @GetMapping("/employees")
+    @GetMapping()
      public ResponseEntity<List<Employee>> getAllEmployees(){
           return new ResponseEntity<>(employeeService.getAllEmployees(),HttpStatus.OK);
     }
 
       //Update Employee By id
-      @PutMapping("/employees/{id}")
+      @PutMapping("/{id}")
      private ResponseEntity<Employee> updateEmployee(@PathVariable Integer id,@Valid @RequestBody Employee employee){
           return new ResponseEntity<>(employeeService.updateEmployee(id,employee),HttpStatus.ACCEPTED);
       }
 
       // Delete Employee By Id
-    @DeleteMapping("/employees/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<String> removeEmployee (@PathVariable("id") int id)
     {
         return new ResponseEntity<>(employeeService.deleteEmployee(id),HttpStatus.OK);

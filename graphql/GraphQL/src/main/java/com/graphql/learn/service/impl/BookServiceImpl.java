@@ -31,5 +31,23 @@ public class BookServiceImpl implements BookService {
         return bookRepo.findById(id);
     }
 
+    @Override
+    public Optional<Book> getByAuthor(String author) {
+        return bookRepo.findByAuthor(author);
+    }
+
+    @Override
+    public boolean deleteById(Integer id) {
+
+          boolean check = bookRepo.existsById(id);
+
+          if (check) {
+              bookRepo.deleteById(id);
+              return true;
+          }
+
+          return false;
+    }
+
 
 }

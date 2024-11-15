@@ -17,7 +17,7 @@ public interface BookService {
       Optional<Book> getById(Integer id);
 
 
+      Optional<Book> getByAuthor(String author);
 
-
-
+      boolean deleteById(Integer id);
 }

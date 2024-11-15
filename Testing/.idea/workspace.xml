@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="961fc7be-2ce2-4bfd-862b-879cc77b57d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/main/java/com/learn/Modal/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/main/java/com/learn/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/main/java/com/learn/repo/BookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/main/java/com/learn/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/test/java/com/learn/controller/BookControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/test/java/com/learn/repo/BookRepoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/ForPrep1/src/test/java/com/learn/service/BookServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/Stream1/src/main/java/com/stream/modal/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/Stream1/src/main/java/com/stream/modal/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/Stream1/src/main/java/com/stream/modal/StudentMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/Stream1/src/main/java/com/stream/singleton/Clipboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ford/Stream1/src/main/java/com/stream/singleton/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_Reactive/springboot-webflux-demo/src/main/java/com/learn/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_Reactive/springboot-webflux-demo/src/main/java/com/learn/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_Reactive/springboot-webflux-demo/src/main/java/com/learn/dto/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_Reactive/springboot-webflux-demo/src/main/java/com/learn/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_Reactive/springboot-webflux-demo/src/test/java/com/learn/MonoFluxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularBeginning/HelloWorld" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularBeginning/HelloWorld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/Microservices/MicroserviceTutorials" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Microservices/MicroserviceTutorials" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/REDUX/redux-app" beforeDir="false" afterPath="$PROJECT_DIR$/../React/REDUX/redux-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/context-react" beforeDir="false" afterPath="$PROJECT_DIR$/../React/context-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/counterApp/counter" beforeDir="false" afterPath="$PROJECT_DIR$/../React/counterApp/counter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/prop-drilling" beforeDir="false" afterPath="$PROJECT_DIR$/../React/prop-drilling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/react-kt" beforeDir="false" afterPath="$PROJECT_DIR$/../React/react-kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/router1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/search-suggestion" beforeDir="false" afterPath="$PROJECT_DIR$/../React/search-suggestion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/testapp" beforeDir="false" afterPath="$PROJECT_DIR$/../React/testapp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/to-do-app" beforeDir="false" afterPath="$PROJECT_DIR$/../React/to-do-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React/use-context2" beforeDir="false" afterPath="$PROJECT_DIR$/../React/use-context2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringAI/SpringAI-P2/GenerativeAI" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringAI/SpringAI-P2/GenerativeAI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stream/Stream1/src/main/java/com/stream/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stream/Stream1/src/main/java/com/stream/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/GraphQlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/GraphQlApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/repository/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/repository/BookRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/java/com/graphql/learn/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphql/GraphQL/src/main/resources/graphql/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/../graphql/GraphQL/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2jixsOSCaO58F9Ku0GbqZh5XKkD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="961fc7be-2ce2-4bfd-862b-879cc77b57d9" name="Changes" comment="" />
+      <created>1721883905854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721883905854</updated>
+    </task>
+    <servers />
+  </component>
+</project>
